@@ -12,6 +12,7 @@ public class TestVoiceDetection : MonoBehaviour
     public float speed = 1;
 
     public TextMeshProUGUI results;
+    public string myWord;
   
 
     protected PhraseRecognizer recognizer;
@@ -47,15 +48,19 @@ public class TestVoiceDetection : MonoBehaviour
         {
             case "Beach":
                 Debug.Log("Beach");
+                myWord = "Beach";
                 break;
             case "Carnival":
                 Debug.Log("Carnival");
+                myWord = "Carnival";
                 break;
             case "Camping":
                 Debug.Log("Camping");
+                myWord = "Camping";
                 break;
             case "Nothing":
                 Debug.Log("Nothing");
+                myWord = "Nothing";
                 break;
         }
 
