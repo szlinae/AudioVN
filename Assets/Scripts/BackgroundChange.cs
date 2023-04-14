@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BackgroundChange : MonoBehaviour
 {
-    public Sprite[] Images;
-    public SpriteRenderer backgroundIMG;
+    public GameObject intro;
+    public GameObject car;
+
     public GameObject theGuy;
     public TestVoiceDetection voiceScript;
     public string theWord; 
@@ -14,6 +15,8 @@ public class BackgroundChange : MonoBehaviour
     void Start()
     {
         voiceScript = theGuy.GetComponent<TestVoiceDetection>();
+        car.SetActive(false);
+        intro.SetActive(true);
     }
 
     // Update is called once per frame
@@ -24,12 +27,20 @@ public class BackgroundChange : MonoBehaviour
           switch (theWord)
         {
             case "Beach":
+                intro.SetActive(false);
+                car.SetActive(true);
                 break;
             case "Carnival":
+                intro.SetActive(false);
+                car.SetActive(true);
                 break;
             case "Camping":
+                intro.SetActive(false);
+                car.SetActive(true);
                 break;
             case "Nothing":
+                car.SetActive(false);
+                intro.SetActive(true);
                 break;
         }
     }
