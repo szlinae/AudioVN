@@ -7,7 +7,7 @@ using UnityEngine.Windows.Speech;
 
 public class TestVoiceDetection : MonoBehaviour
 {
-    public string[] keywords = new string[] { "Beach", "Carnival", "Camping", "Nothing" };
+    public string[] keywords = new string[] { "Beach", "Carnival", "Camping", "Nothing", "Sick", "Seagulls", "Rain", "Rollercoaster", "Ferriswheel", "Food", "Hiking", "Fishing", "Campfire" };
     public ConfidenceLevel confidence = ConfidenceLevel.Medium;
     public float speed = 1;
 
@@ -62,6 +62,43 @@ public class TestVoiceDetection : MonoBehaviour
                 Debug.Log("Nothing");
                 myWord = "Nothing";
                 break;
+            case "Sick":
+                Debug.Log("Sick");
+                myWord = "Sick";
+                break;
+            case "Seagulls":
+                Debug.Log("Seagulls");
+                myWord = "Seagulls";
+                break;
+            case "Rain":
+                Debug.Log("Rain");
+                myWord = "Rain";
+                break;
+            case "Rollercoaster":
+                Debug.Log("Rollercoaster");
+                myWord = "Rollercoaster";
+                break;
+            case "Ferriswheel":
+                Debug.Log("Ferriswheel");
+                myWord = "Ferriswheel";
+                break;
+            case "Food":
+                Debug.Log("Food");
+                myWord = "Food";
+                break;
+            case "Hiking":
+                Debug.Log("Hiking");
+                myWord = "Hiking";
+                break;
+            case "Fishing":
+                Debug.Log("Fishing");
+                myWord = "Fishing";
+                break;
+            case "Campfire":
+                Debug.Log("Campfire");
+                myWord = "Campfire";
+                break;
+          
         }
 
         

@@ -17,7 +17,7 @@ namespace DialogueEditor
         {
             Option,
             Speech,
-            End
+            //End
         }
 
         // Getters
@@ -192,12 +192,12 @@ namespace DialogueEditor
                     }
                     break;
 
-                case eButtonType.End:
+               /* case eButtonType.End:
                     {
                         TextMesh.text = "End.";
                         TextMesh.font = endFont;
                     }
-                    break;
+                    break;*/
             }
         }
 
@@ -220,9 +220,9 @@ namespace DialogueEditor
                     ConversationManager.Instance.OptionSelected(m_node as OptionNode);
                     break;
 
-                case eButtonType.End:
+               /* case eButtonType.End:
                     ConversationManager.Instance.EndButtonSelected();
-                    break;
+                    break;*/
             }
         }
 
