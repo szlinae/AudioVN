@@ -62,8 +62,8 @@ public class BackgroundChange : MonoBehaviour
                 case "Rain":
                     active.SetActive(false);
 
-                    //active = sprites.transform.Find("").gameObject;
-                    //active.SetActive(true);
+                    active = sprites.transform.Find("BeachRain").gameObject;
+                    active.SetActive(true);
 
 
                     break;

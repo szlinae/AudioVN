@@ -28,7 +28,7 @@ public class VoiceChoices : MonoBehaviour
     public GameObject theGuy;
     public TestVoiceDetection voiceScript;
 
-    protected string word = " ";
+    public string word = " ";
 
 
 

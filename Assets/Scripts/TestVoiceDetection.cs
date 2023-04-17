@@ -37,7 +37,7 @@ public class TestVoiceDetection : MonoBehaviour
     private void Recognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
     {
         word = args.text;
-        results.text = "You said: <b>" + word + "</b>";
+       // results.text = "You said: <b>" + word + "</b>";
     }
 
     private void Update()

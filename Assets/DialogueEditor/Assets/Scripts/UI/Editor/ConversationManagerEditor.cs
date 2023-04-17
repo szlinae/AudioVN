@@ -83,16 +83,16 @@ namespace DialogueEditor
             float width, height;
             width = contextRect.width * 0.75f;
             height = BOX_HEIGHT;
-            if (t.BackgroundImage == null)
+            /*if (t.BackgroundImage == null)
             {
                 boxRect = new Rect(contextRect.x + contextRect.width * 0.125f, contextRect.y + 10, width, height);
                 EditorGUI.DrawRect(boxRect, Color.black);
             }
             else
-            {
+            {*/
                 boxRect = new Rect(contextRect.x + contextRect.width * 0.125f, contextRect.y + 10, width, height);
 
-                if (t.BackgroundImageSliced)
+               /* if (t.BackgroundImageSliced)
                 {
                     GUIStyle style = new GUIStyle();
                     RectOffset ro = new RectOffset();
@@ -108,7 +108,7 @@ namespace DialogueEditor
                 {
                     GUI.DrawTexture(boxRect, t.BackgroundImage.texture);
                 }
-            }
+            }*/
 
 
             // Draw icon

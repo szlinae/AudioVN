@@ -33,8 +33,8 @@ namespace DialogueEditor
         // Drawn by custom inspector
         public bool ScrollText;
         public float ScrollSpeed = 1;
-        public Sprite BackgroundImage;
-        public bool BackgroundImageSliced;
+        //public Sprite BackgroundImage;
+        //public bool BackgroundImageSliced;
         public Sprite OptionImage;
         public bool OptionImageSliced;
         public bool AllowMouseInteraction;
@@ -629,7 +629,7 @@ namespace DialogueEditor
             DialoguePanel.gameObject.SetActive(true);
             OptionsPanel.gameObject.SetActive(true);
 
-            if (BackgroundImage != null)
+           /* if (BackgroundImage != null)
             {
                 DialogueBackground.sprite = BackgroundImage;
 
@@ -637,7 +637,7 @@ namespace DialogueEditor
                     DialogueBackground.type = Image.Type.Sliced;
                 else
                     DialogueBackground.type = Image.Type.Simple;
-            }
+            }*/
 
             NpcIcon.sprite = BlankSprite;
         }
