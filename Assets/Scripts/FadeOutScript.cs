@@ -10,7 +10,7 @@ public class FadeOutScript : MonoBehaviour
 {   
     public Image blackbox;
     public bool ending;
-    public float fadeTime = 1.0f;
+    public float fadeTime = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +22,14 @@ public class FadeOutScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ending = ConversationManager.Instance.GetBool("Ending");
         if (ending)
         {
             StartCoroutine(FadeOut());
         }
         IEnumerator FadeOut()
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
             blackbox.CrossFadeAlpha(1.0f, fadeTime, false);
         }
     }

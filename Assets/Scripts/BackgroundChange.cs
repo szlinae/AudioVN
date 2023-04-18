@@ -22,6 +22,8 @@ public class BackgroundChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        campfireTime = false;
+        CampFireTime = false;
         //convomana = convoObj.GetComponent<ConversationManager>();
         allChildren = sprites.GetComponentsInChildren<Transform>();
         foreach (Transform child in allChildren)
@@ -36,8 +38,7 @@ public class BackgroundChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        campfireTime = false;
-        CampFireTime = false;
+        
         campfireTime = ConversationManager.Instance.GetBool("campfireTime");
         CampFireTime = ConversationManager.Instance.GetBool("CampFireTime");
         current = voiceChoices.currentBranch;
