@@ -45,7 +45,7 @@ public class VoiceChoices : MonoBehaviour
     void Update()
     {
         word = voiceScript.myWord;
-
+        Debug.Log("beach=" + beach);
         choiceTime = ConversationManager.Instance.GetBool("choiceTime");
 
         if (choiceTime)
